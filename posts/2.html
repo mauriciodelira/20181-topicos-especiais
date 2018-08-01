@@ -69,7 +69,23 @@
                     </span>
 
                     <script type="application/ld+json">
-                        // JSON+LD da review + produto em questão
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "AggregateRating",
+                            "bestRating": 10,
+                            "worstRating": 1,
+                            "ratingValue": 9,
+                            "reviewCount": 1,
+                            "itemReviewed": {
+                                "@type": "Product",
+                                "description": "Máscara Butterflower",
+                                "offers": {
+                                  "@type": "Offer",
+                                  "price": "60.00 a 80.00",
+                                  "priceCurrency": "BRL"
+                                }
+                            }
+                        }
                     </script>
                 </section>
                 <p class="lead">A Butterflower tem DNA de hidratação. Já na aplicação é possível sentir o poder
@@ -83,7 +99,26 @@
                 <hr>
 
                 <script type="application/ld+json">
-                    // JSON-LD do artigo
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "BlogPosting",
+                        "headline": "Um soufflé hidratante para seu cabelo",
+                        "alternativeHeadline": "Inteiramente à base de vegetais, essa máscara faz um bem danado.",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Jaênia Sousa"
+                        },
+                        "publisher":{
+                            "@type": "Person",
+                            "name": "Jaênia Sousa"
+                        },
+                        "mainEntityOfPage": "http://maniapoo.com.br/posts/1.html",
+                        "dateCreated": "2018-07-20",
+                        "datePublished": "2018-07-30",
+                        "genre": "máscara de hidratação",
+                        "articleBody": "A Butterflower tem DNA de hidratação. Já na aplicação é possível sentir o poder desembaraçante e a leveza da emulsão. O resultado - não poderia ser diferente - é o que se observa neste tipo de tratamento, cabelo mais leve e macio. Os formadores de filme vegetais ajudam a manter o cabelo hidratado e deixam os fios brilhantes e suaves ao toque - em especial no dia seguinte à lavagem. Os cabelos - mesmo sem o uso de finalizador - tem acentuamento visível das formas e curvas.",
+                        "image": "https://www.meucabelonatural.com.br/media/catalog/product/cache/1/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/s/o/souffle_de_lipidios_butterflower.png"
+                    }
                 </script>
             </article>
 
@@ -96,7 +131,15 @@
                     </div>
 
                     <script type="application/ld+json">
-                        // JSON-LD do comentário
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "Comment",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Joana"
+                            },
+                            "text": "Amei! Valeu a pena ter comprado, agora acho que deveria vir numa quantidade maior..."
+                        }
                     </script>
                 </div>
 
@@ -108,7 +151,15 @@
                     </div>
 
                     <script type="application/ld+json">
-                        // JSON-LD do comentário
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "Comment",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Marcos"
+                            },
+                            "text": "Gostei, mas só uso de pouquinho pra fazer render pelo preço."
+                        }
                     </script>
                 </div>
             </section>
@@ -122,7 +173,13 @@
 </footer>
 
 <script type="application/ld+json">
-    // JSON-LD dos dados básicos do blog
+    {
+     "@context": "http://schema.org",
+     "@type": "Blog",
+     "@id": "http://maniapoo.com.br",
+     "name": "Mania Poo",
+     "description": "Venha conhecer um pouco mais sobre os produtos para o seu cabelo, liberados para No e Low Poo!"
+    }
 </script>
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
