@@ -69,7 +69,16 @@
                     </span>
 
                     <script type="application/ld+json">
-                        // JSON+LD da review + produto em questão
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "Product",
+                            "description": "Cowash No Bubble Magic Wash - Soul Power",
+                            "offers": {
+                              "@type": "Offer",
+                              "price": "20.00 a 30.00",
+                              "priceCurrency": "BRL"
+                            }
+                        }
                     </script>
                 </section>
                 <p class="lead">Os cowashes são conhecidos por serem alternativas suaves de limpeza. Mas este cowash da
@@ -87,6 +96,42 @@
 
                 <script type="application/ld+json">
                     // JSON-LD do artigo
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "BlogPosting",
+                        "headline": "Saca só essa alternativa que não machuca o couro cabeludo!",
+                        "alternativeHeadline": "Testamos o Cowash No Bubble Magic Wash, da Soul Power.",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Jaênia Sousa"
+                        },
+                        "publisher":{
+                            "@type": "Person",
+                            "name": "Jaênia Sousa"
+                        },
+                        "mainEntityOfPage": "http://maniapoo.com.br/posts/1.html",
+                        "dateCreated": "2018-07-20",
+                        "datePublished": "2018-08-01",
+                        "genre": "cowash",
+                        "articleBody": "Os cowashes são conhecidos por serem alternativas suaves de limpeza. Mas este cowash da Soul Power deu conta de um cabelo bastante sujo. Em termos de aplicação, o No Bubble rende bastante, provavelmente em função da textura menos fluida que ajuda a espalhar o produto de forma mais consciente. Você sente com os dedos onde o produto está sendo aplicado pois ele demora um pouquinho para emulsionar com a água. O No Bubble limpa sem dificuldade toda a oleosidade aparente, deixando os fios soltos e limpinhos. Foi necessário condicionar os fios após a aplicação pois o No Bubble não tem um super-efeito desembaraçante, seu foco parece ser realmente a limpeza e isso ele faz super-bem.",
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "bestRating": 10,
+                            "worstRating": 1,
+                            "ratingValue": 7,
+                            "reviewCount": 1,
+                            "itemReviewed": {
+                                "@type": "Product",
+                                "description": "Cowash No Bubble Magic Wash - Soul Power",
+                                "offers": {
+                                  "@type": "Offer",
+                                  "price": "20.00 a 30.00",
+                                  "priceCurrency": "BRL"
+                                }
+                            }
+                        },
+                        "image": "https://http2.mlstatic.com/creme-de-limpeza-soul-power-no-bubble-magic-wash-315ml-D_NQ_NP_854325-MLB27339664079_052018-F.jpg"
+                    }
                 </script>
             </article>
 
@@ -100,6 +145,16 @@
 
                     <script type="application/ld+json">
                         // JSON-LD do comentário
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "Comment",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Kayara"
+                            },
+                            "text": "Curti, foi uma boa recomendação."
+                        }
+
                     </script>
                 </div>
             </section>
@@ -113,7 +168,28 @@
 </footer>
 
 <script type="application/ld+json">
-    // JSON-LD dos dados básicos do blog
+    {
+     "@context": "http://schema.org",
+     "@type": "Blog",
+     "@id": "http://maniapoo.com.br",
+     "name": "Mania Poo",
+     "description": "Venha conhecer um pouco mais sobre os produtos para o seu cabelo, liberados para No e Low Poo!",
+     "creator": [
+        {
+          "@type": "Person",
+          "name": "Jaênia Sousa",
+          "email": "jaeniaps@gmail.com",
+          "image": "https://avatars0.githubusercontent.com/u/17907292?s=460&v=4"
+        },
+        {
+          "@type": "Person",
+          "name": "Maurício Lira",
+          "email": "mauriciodlira@gmail.com",
+          "image": "https://avatars1.githubusercontent.com/u/15882780?s=460&v=4"
+        }
+     ],
+     "dateCreated": "2018-07-20"
+    }
 </script>
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
