@@ -69,7 +69,24 @@
                     </span>
 
                     <script type="application/ld+json">
-                        // JSON+LD da review + produto em questão
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "AggregateRating",
+                            "bestRating": 10,
+                            "worstRating": 1,
+                            "ratingValue": 8,
+                            "reviewCount": 1,
+                            "itemReviewed": {
+                                "@type": "Product",
+                                "description": "Máscara Amido de Milho",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "price": "10.00 a 30.00",
+                                    "priceCurrency": "BRL"
+                                }
+                            }
+                        }
+
                     </script>
                 </section>
                 <p class="lead">Os cabelos não demoraram mais que o normal para secar - o que acontece com alguns
@@ -84,7 +101,63 @@
                     há outras que duplicam e vendem por R$30.</p>
 
                 <script type="application/ld+json">
-                    // JSON-LD do artigo
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "BlogPosting",
+                        "headline": "Para dar A-QUE-LE volume no seu cabelo",
+                        "alternativeHeadline": "Uma máscara em conta e que traz um resultado ótimo.",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Mauricio Lira"
+                        },
+                        "publisher": {
+                            "@type": "Person",
+                            "name": "Mauricio Lira"
+                        },
+                        "mainEntityOfPage": "http://maniapoo.com.br/posts/4.html",
+                        "dateCreated": "2018-07-27",
+                        "datePublished": "2018-08-01",
+                        "genre": "mascara amido",
+                        "comment": [
+                            {
+                                "@type": "Comment",
+
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Maíra"
+                                },
+                                "text": "Triste que não te ouvi... Inventei de ir pela mais barata, não tinha visto que essa era R$10,00, e a outra máscara estragou meu cabelo. Vou procurar essa de amido de milho pra ver se reparo o estrago!"
+                            }
+                        ],
+                        "articleBody": "Os cabelos não demoraram mais que o normal para secar - o que acontece com alguns produtos liberados para No Poo - e os fios ficaram bem leves. No momento da aplicação, tenha paciência para desfazer os nós com calma, a fórmula não é hiper-desembaraçante por isso deixe os agentes condicionantes fazerem seu trabalho e desembarace os cabelos com paciência. Depois da pausa e do enxágue é super fácil pentear os fios. Talvez por não ter pesado, a máscara Skala Amido de Milho parece ter ajudado a deixar o cabelo com aquele volume na medida certa. Só deixo avisado para procurarem bem. Há loj",
+                        "about": {
+                            "@type": "Product",
+                            "description": "Máscara Amido de Milho",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "10.00 a 30.00",
+                                "priceCurrency": "BRL"
+                            }
+                        },
+                        "aggregateRating": {
+                            "@type": "AggregateRating",
+                            "bestRating": 10,
+                            "worstRating": 1,
+                            "ratingValue": 8,
+                            "reviewCount": 1,
+                            "itemReviewed": {
+                                "@type": "Product",
+                                "description": "Máscara Amido de Milho",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "price": "10.00 a 30.00",
+                                    "priceCurrency": "BRL"
+                                }
+                            }
+                        },
+                        "image": "https://i1.wp.com/www.beautycris.com.br/wp-content/uploads/2017/11/amido-de-milho-skala-resenha.jpg?fit=578%2C325&ssl=1"
+                    }
+
                 </script>
             </article>
             <hr>
@@ -99,7 +172,15 @@
                             se reparo o estrago!</p>
                     </div>
                     <script type="application/ld+json">
-                        // JSON-LD do comentário
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "Comment",
+                            "author": {
+                                "@type": "Person",
+                                "name": "Maíra"
+                            },
+                            "text": "Triste que não te ouvi... Inventei de ir pela mais barata, não tinha visto que essa era R$10,00, e a outra máscara estragou meu cabelo. Vou procurar essa de amido de milho pra ver se reparo o estrago!"
+                        }
                     </script>
                 </div>
 
@@ -116,7 +197,16 @@
 </footer>
 
 <script type="application/ld+json">
-    // JSON-LD dos dados básicos do blog
+    {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "@id": "http://maniapoo.com.br",
+        "name": "Mania Poo",
+        "description": "Venha conhecer um pouco mais sobre os produtos para o seu cabelo!",
+        "dateCreated": "2018-07-20"
+    }
+
+
 </script>
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
