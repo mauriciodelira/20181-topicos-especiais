@@ -70,7 +70,23 @@
                     </span>
 
                     <script type="application/ld+json">
-                        // JSON+LD da review + produto em questão
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "AggregateRating",
+                            "bestRating": 10,
+                            "worstRating": 1,
+                            "ratingValue": 5,
+                            "reviewCount": 1,
+                            "itemReviewed": {
+                                "@type": "Product",
+                                "description": "Máscara Meu Cacho, Minha Vida",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "price": "30.00 a 60.00",
+                                    "priceCurrency": "BRL"
+                                }
+                            }
+                        }
                     </script>
                 </section>
                 <p class="lead">Uma dupla legal para quem tem cabelo que pesa com facilidade é usar essa máscara e
@@ -80,7 +96,73 @@
                     pentear...) sem ficar com o cabelo emplastrado.</p>
 
                 <script type="application/ld+json">
-                    // JSON-LD do artigo
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "BlogPosting",
+                        "headline": "Cabelos cheirosos e alinhados",
+                        "alternativeHeadline": "Não poderíamos deixar essa linha da Lola de lado, né?!",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Mauricio Lira"
+                        },
+                        "publisher": {
+                            "@type": "Person",
+                            "name": "Mauricio Lira"
+                        },
+                        "mainEntityOfPage": "http://maniapoo.com.br/posts/3.html",
+                        "dateCreated": "2018-07-25",
+                        "datePublished": "2018-07-28",
+                        "genre": "mascara finalizador",
+                        "comment": [
+                            {
+                                "@type": "Comment",
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Marcela"
+                                },
+                                "text": "Não acho que tenha sido tão bom no meu cabelo... Deixou um pouco ressecado",
+                                "comment": [
+                                    {
+                                        "@type": "Comment",
+                                        "author": {
+                                            "@type": "Person",
+                                            "name": "Lucas"
+                                        },
+                                        "text": "Pois no meu adorei! Super hidratou o couro!"
+                                    }
+                                ]
+                            }
+                        ],
+                        "articleBody": "Uma dupla legal para quem tem cabelo que pesa com facilidade é usar essa máscara e finalizar com o Oleosos e Furiosos também da Lola Cosmetics. Depois de seco o cabelo ficou muito cheiroso e alinhado. O produto não pesou nos fios e no dia-a-dia é possível usar um finalizador (leave in, creme para pentear...) sem ficar com o cabelo emplastrado.",
+                        "about": {
+                            "@type": "Product",
+                            "description": "Máscara Meu Cacho, Minha Vida",
+                            "offers": {
+                                "@type": "Offer",
+                                "price": "30.00 a 60.00",
+                                "priceCurrency": "BRL"
+                            },
+                            "category": "finalizante"
+                        },
+                        "aggregateRating": {
+                            "@context": "http://schema.org",
+                            "@type": "AggregateRating",
+                            "bestRating": 10,
+                            "worstRating": 1,
+                            "ratingValue": 5,
+                            "reviewCount": 1,
+                            "itemReviewed": {
+                                "@type": "Product",
+                                "description": "Máscara Meu Cacho, Minha Vida",
+                                "offers": {
+                                    "@type": "Offer",
+                                    "price": "30.00 a 60.00",
+                                    "priceCurrency": "BRL"
+                                }
+                            }
+                        },
+                        "image": "https://www.meusalao.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/a/mascara-tratamento-meucacho-minhavida-930g.jpg"
+                    }
                 </script>
             </article>
             <hr>
@@ -101,12 +183,39 @@
                             </div>
 
                             <script type="application/ld+json">
-                                // JSON-LD do comentário filho
+                                {
+                                    "@context": "http://schema.org",
+                                    "@type": "Comment",
+                                    "author": {
+                                        "@type": "Person",
+                                        "name": "Lucas"
+                                    },
+                                    "text": "Pois no meu adorei! Super hidratou o couro!"
+                                }
                             </script>
                         </div>
 
                         <script type="application/ld+json">
-                            // JSON-LD do comentário pai
+                            {
+                                "@context": "http://schema.org",
+                                "@type": "Comment",
+                                "author": {
+                                    "@type": "Person",
+                                    "name": "Marcela"
+                                },
+                                "text": "Não acho que tenha sido tão bom no meu cabelo... Deixou um pouco ressecado",
+                                "comment": [
+                                    {
+                                        "@context": "http://schema.org",
+                                        "@type": "Comment",
+                                        "author": {
+                                            "@type": "Person",
+                                            "name": "Lucas"
+                                        },
+                                        "text": "Pois no meu adorei! Super hidratou o couro!"
+                                    }
+                                ]
+                            }
                         </script>
                     </div>
                 </div>
@@ -116,12 +225,20 @@
 </div>
 <footer class="py-5 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Feito com muito <span class="text-monospace small">&ltcodigo/&gt</span> para a disciplina de <strong>Tópicos Especiais 2018.1</strong></p>
+        <p class="m-0 text-center text-white">Feito com muito <span class="text-monospace small">&ltcodigo/&gt</span>
+            para a disciplina de <strong>Tópicos Especiais 2018.1</strong></p>
     </div>
 </footer>
 
 <script type="application/ld+json">
-    // JSON-LD dos dados básicos do blog
+    {
+        "@context": "http://schema.org",
+        "@type": "Blog",
+        "@id": "http://maniapoo.com.br",
+        "name": "Mania Poo",
+        "description": "Venha conhecer um pouco mais sobre os produtos para o seu cabelo!",
+        "dateCreated": "2018-07-20"
+    }
 </script>
 <script src="../vendor/jquery/jquery.min.js"></script>
 <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
