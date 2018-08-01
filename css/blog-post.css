@@ -13,3 +13,14 @@ body {
     padding-top: 56px;
   }
 }
+
+.review-rating {
+    word-spacing: .2em;
+}
+.review-value {
+    font-size: 1.3em;
+}
+
+.avatar-img {
+    max-height: 50px;
+}
