@@ -3,7 +3,8 @@
 
 # Log file
 *.log
-
+/node_modules
+LICENSE
 # BlueJ files
 *.ctxt
 
@@ -33,3 +34,6 @@ out/
 modules.xml
 .idea/misc.xml
 *.ipr
+/server/target/
+/projeto/server/BlogServer/nbproject/private/
+/projeto/server/Blog/nbproject/private/

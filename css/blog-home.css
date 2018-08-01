@@ -13,3 +13,9 @@ body {
     padding-top: 56px;
   }
 }
+
+.card-img-fixed-height {
+  max-height: 300px;
+  object-fit: cover;
+  overflow: hidden;
+}
